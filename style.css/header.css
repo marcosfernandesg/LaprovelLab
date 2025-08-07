@@ -1,0 +1,48 @@
+.hero {
+            background-image: url(../assets/imagens/fundo.png);
+            min-height: 80vh;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .dentist-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .appointment-form input, 
+        .appointment-form textarea {
+            border-bottom: 2px solid #ddd;
+            transition: all 0.3s;
+        }
+        
+        .appointment-form input:focus, 
+        .appointment-form textarea:focus {
+            border-bottom-color: var(--primary);
+        }
+        
+        .map-container {
+            filter: grayscale(20%);
+            transition: filter 0.3s;
+        }
+        
+        .map-container:hover {
+            filter: grayscale(0%);
+        }
