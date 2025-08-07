@@ -1,411 +1,280 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OdontoCare - Especialistas em Saúde Bucal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Prótesis Dental Lab - Excelência em Próteses Dentárias</title>
+    <link rel="stylesheet" href="./style.css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Barra de Navegação -->
-    <nav class="bg-white shadow-md fixed w-full z-10">
-        <div class="container mx-auto px-4 py-3 md:py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-tooth text-3xl text-blue-600"></i>
-                    <span class="text-2xl font-bold text-blue-600">Laprovel<span class="text-blue-800">Care</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-blue-600 font-medium hover:text-blue-800 transition">Início</a>
-                    <a href="#servicos" class="text-gray-600 font-medium hover:text-blue-600 transition">Serviços</a>
-                    <a href="#equipe" class="text-gray-600 font-medium hover:text-blue-600 transition">Equipe</a>
-                    <a href="#contato" class="text-gray-600 font-medium hover:text-blue-600 transition">Contato</a>
-                </div>
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition md:hidden" id="mobile-menu-button">
+    <!-- Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./assets/imagens/Laprovel.png" alt="Prótesis Dental Lab Logo - Tooth icon with blue typography">
+ 
+                <p></p>
+            </div>
+            
+            <nav>
+                <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
-            </div>
-            
-            <!-- Menu Mobile -->
-            <div class="md:hidden hidden flex-col mt-4 space-y-3" id="mobile-menu">
-                <a href="#inicio" class="block px-3 py-2 rounded bg-blue-50 text-blue-600">Início</a>
-                <a href="#servicos" class="block px-3 py-2 rounded hover:bg-blue-50">Serviços</a>
-                <a href="#equipe" class="block px-3 py-2 rounded hover:bg-blue-50">Equipe</a>
-                <a href="#contato" class="block px-3 py-2 rounded hover:bg-blue-50">Contato</a>
-            </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#technology">Tecnologia</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Seção Hero -->
-    <section class="hero flex items-center pt-20" id="inicio">
-        <div class="container mx-auto px-4 py-16 md:py-24">
-            <div class="max-w-2xl mx-auto text-center text-white">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Sua Saúde Bucal em Boas Mãos</h1>
-                <p class="text-xl mb-8">Cuidados odontológicos personalizados com tecnologia de ponta e atendimento humanizado para toda a família.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#contato" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Agendar Consulta</a>
-                    <a href="#servicos" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">Nossos Serviços</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Serviços -->
-    <section class="py-16 bg-gray-50" id="servicos">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4">Nossos Serviços Especializados</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos tratamentos odontológicos completos com tecnologia avançada e materiais de alta qualidade.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-tooth"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Clareamento Dental</h3>
-                        <p class="text-gray-600">Procedimento seguro e eficaz para deixar seus dentes mais brancos e brilhantes.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-teeth"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Ortodontia</h3>
-                        <p class="text-gray-600">Tratamentos com aparelhos fixos e alinhadores invisíveis para corrigir a posição dos dentes.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-teeth-open"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Implantes Dentários</h3>
-                        <p class="text-gray-600">Solução permanente e natural para repor dentes perdidos com máxima segurança.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-teeth"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Odontopediatria</h3>
-                        <p class="text-gray-600">Atendimento especializado para crianças, com abordagem lúdica e sem traumas.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-teeth-open"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Prótese Dentária</h3>
-                        <p class="text-gray-600">Reposição de dentes perdidos com próteses fixas ou removíveis, personalizadas para cada paciente.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
-                    <div class="text-center">
-                        <div class="feature-icon mb-4">
-                            <i class="fas fa-tooth"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Periodontia</h3>
-                        <p class="text-gray-600">Prevenção e tratamento de doenças gengivais para manter sua gengiva saudável.</p>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Excelência em Próteses Dentárias</h1>
+                <p class="hero-subtitle">Tecnologia de ponta e artesanato meticuloso para sorrisos perfeitos e naturais.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Agende uma Consulta</a>
+                    <a href="#services" class="btn btn-secondary">Nossos Serviços</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Equipe -->
-    <section class="py-16 bg-white" id="equipe">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4">Nossa Equipe de Profissionais</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Especialistas altamente qualificados dedicados a proporcionar o melhor atendimento odontológico.</p>
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10.000+</div>
+                    <div class="stat-label">Próteses Fabricadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfação dos Pacientes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Clínicas Parceiras</div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços Especializados</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Fabricamos próteses dentárias de alta qualidade utilizando os melhores materiais e técnicas modernas.</p>
             
-            <!-- Abas -->
-            <div class="max-w-4xl mx-auto">
-                <div class="flex flex-wrap border-b border-gray-200 mb-8">
-                    <button class="tab-button active px-6 py-3 text-blue-600 font-medium border-b-2 border-blue-600" data-tab="dentistas">Dentistas</button>
-                    <button class="tab-button px-6 py-3 text-gray-600 font-medium hover:text-blue-600 transition" data-tab="especialistas">Especialistas</button>
-                    <button class="tab-button px-6 py-3 text-gray-600 font-medium hover:text-blue-600 transition" data-tab="equipe">Equipe Auxiliar</button>
-                </div>
-                
-                <!-- Conteúdo das Abas -->
-                <div class="tab-content active" id="dentistas">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Card 1 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Dr.+Marcos" alt="Dr. Marcos Silva, dentista clínico geral com 15 anos de experiência, sorrindo com jaleco branco" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Dr. Marcos Silva</h3>
-                            <p class="text-blue-600 text-center mb-4">Clínico Geral</p>
-                            <p class="text-gray-600 mb-4">Especializado em restaurações estéticas e próteses dentárias. Formado pela USP com 15 anos de experiência.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 2 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Dra.+Ana" alt="Dra. Ana Paula, ortodontista especializada em aparelhos invisíveis, com aparência profissional e sorriso acolhedor" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Dra. Ana Paula</h3>
-                            <p class="text-blue-600 text-center mb-4">Ortodontista</p>
-                            <p class="text-gray-600 mb-4">Especialista em ortodontia invisível e aparelhos estéticos. Membro da Associação Brasileira de Ortodontia.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400" alt="Prótese fixa sendo examinada em um consultório odontológico moderno">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Próteses Fixas</h3>
+                        <p class="service-description">Coroas e pontes em cerâmica pura ou metalocerâmica para restauração estética e funcional duradoura.</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 
-                <div class="tab-content" id="especialistas">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Card 1 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Dr.+Roberto" alt="Dr. Roberto Mendes, especialista em implantes dentários com 20 anos de experiência, usando óculos e jaleco profissional" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Dr. Roberto Mendes</h3>
-                            <p class="text-blue-600 text-center mb-4">Implantodontista</p>
-                            <p class="text-gray-600 mb-4">Referência nacional em implantes dentários com mais de 20 anos de experiência. Certificado internacional.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 2 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Dra.+Carla" alt="Dra. Carla Oliveira, odontopediatra especializada em atendimento infantil, com aparência jovial e sorriso afetuoso" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Dra. Carla Oliveira</h3>
-                            <p class="text-blue-600 text-center mb-4">Odontopediatra</p>
-                            <p class="text-gray-600 mb-4">Especialista em atendimento infantil. Transformando consultas odontológicas em momentos divertidos.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400" alt="Prótese removível em uma mesa de trabalho dentária com instrumentos">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Próteses Removíveis</h3>
+                        <p class="service-description">Próteses totais e parciais com encaixe perfeito para máxima conforto e funcionalidade.</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 
-                <div class="tab-content" id="equipe">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Card 1 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Tatiana" alt="Tatiana Alves, higienista dental com 8 anos de experiência, usando jaleco azul e com expressão profissional" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Tatiana Alves</h3>
-                            <p class="text-blue-600 text-center mb-4">Higienista Dental</p>
-                            <p class="text-gray-600 mb-4">Profissional com formação em saúde bucal e experiência em profilaxia e orientação de higiene.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 2 -->
-                        <div class="dentist-card bg-white p-6 rounded-xl shadow-md transition duration-300">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://placehold.co/300x300/1e90ff/FFFFFF?text=Fernanda" alt="Fernanda Costa, recepcionista e assistente administrativa do consultório, com sorriso acolhedor e aparência profissional" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-                            </div>
-                            <h3 class="text-xl font-bold text-center mb-1">Fernanda Costa</h3>
-                            <p class="text-blue-600 text-center mb-4">Recepcionista</p>
-                            <p class="text-gray-600 mb-4">Responsável pelo atendimento personalizado e agendamentos. Sempre pronta para ajudar.</p>
-                            <div class="flex justify-center space-x-2">
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://placehold.co/600x400" alt="Modelo 3D de implante dentário sendo visualizado em computador">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Próteses sobre Implantes</h3>
+                        <p class="service-description">Soluções avançadas para reabilitação oral sobre implantes com máxima estética e durabilidade.</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section class="py-16 bg-gray-50" id="contato">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-blue-600 mb-4">Entre em Contato Conosco</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Estamos à disposição para tirar suas dúvidas e agendar sua consulta.</p>
-            </div>
-            
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Formulário -->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <h3 class="text-2xl font-bold text-blue-600 mb-6">Agende sua Consulta</h3>
-                        
-                        <form class="appointment-form space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <label for="nome" class="block text-gray-600 mb-1">Nome Completo*</label>
-                                    <input type="text" id="nome" class="w-full px-4 py-2 outline-none" required>
-                                </div>
-                                <div>
-                                    <label for="telefone" class="block text-gray-600 mb-1">Telefone*</label>
-                                    <input type="tel" id="telefone" class="w-full px-4 py-2 outline-none" required>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <label for="email" class="block text-gray-600 mb-1">Email*</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 outline-none" required>
-                            </div>
-                            
-                            <div>
-                                <label for="servico" class="block text-gray-600 mb-1">Serviço de Interesse</label>
-                                <select id="servico" class="w-full px-4 py-2 outline-none border-b-2 border-gray-200">
-                                    <option value="">Selecione um serviço</option>
-                                    <option value="consulta">Consulta de Rotina</option>
-                                    <option value="clareamento">Clareamento Dental</option>
-                                    <option value="ortodontia">Ortodontia</option>
-                                    <option value="implante">Implante Dentário</option>
-                                    <option value="protese">Prótese Dentária</option>
-                                    <option value="pediatria">Odontopediatria</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label for="mensagem" class="block text-gray-600 mb-1">Mensagem</label>
-                                <textarea id="mensagem" rows="4" class="w-full px-4 py-2 outline-none"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full font-medium transition">Enviar Mensagem</button>
-                        </form>
-                    </div>
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="tech-container">
+                <div class="tech-content">
+                    <h2 class="tech-title">Tecnologia de Ponta</h2>
+                    <p class="tech-subtitle">Investimos continuamente em tecnologia avançada para oferecer próteses com precisão milimétrica e máxima naturalidade.</p>
+                    <div class="tech-divider divider"></div>
                     
-                    <!-- Informações de Contato -->
-                    <div class="space-y-8">
-                        <div class="bg-white p-8 rounded-xl shadow-md">
-                            <h3 class="text-2xl font-bold text-blue-600 mb-6">Informações de Contato</h3>
-                            
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Endereço</h4>
-                                        <p class="text-gray-600">Rua das Flores, 123 - Sala 501<br>Centro, São Paulo - SP<br>CEP: 01001-000</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <i class="fas fa-phone-alt text-blue-600 mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Telefones</h4>
-                                        <p class="text-gray-600">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Email</h4>
-                                        <p class="text-gray-600">contato@odontocare.com.br</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <i class="fas fa-clock text-blue-600 mt-1 mr-4"></i>
-                                    <div>
-                                        <h4 class="font-medium">Horário de Funcionamento</h4>
-                                        <p class="text-gray-600">Segunda a Sexta: 8h às 20h<br>Sábado: 8h às 14h</p>
-                                    </div>
-                                </div>
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="tech-feature-title">CAD/CAM Digital</h4>
+                                <p class="tech-feature-text">Design e fabricação digital para próteses precisas e perfeitas.</p>
                             </div>
                         </div>
                         
-                        <!-- Mapa -->
-                        <div class="bg-white p-4 rounded-xl shadow-md">
-                            <div class="map-container rounded-lg overflow-hidden">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4603.165565166352!2d-40.30187282387512!3d-20.342223951279166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8161d10ccc391%3A0x9b5ee52c85059e16!2sMarcos%20de%20Jesus%20Pereira!5e1!3m2!1spt-BR!2sbr!4v1754589703245!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="tech-feature-title">Zirconia de Alta Resistência</h4>
+                                <p class="tech-feature-text">Próteses com o melhor material cerâmico do mercado.</p>
                             </div>
                         </div>
+                        
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div>
+                                <h4 class="tech-feature-title">Escaneamento Intraoral</h4>
+                                <p class="tech-feature-text">Técnica moderna que elimina moldes de gesso desconfortáveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-image">
+                    <img src="https://placehold.co/800x600" alt="Dentista utilizando scanner intraoral digital em paciente no consultório">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">A opinião de dentistas e pacientes que confiam em nosso trabalho.</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://placehold.co/100x100" alt="Dra. Ana Clara Santos - Dentista especializada em próteses">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Dra. Ana Clara Santos</h4>
+                            <p>Cirurgiã Dentista</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Trabalho com o Prótesis Dental Lab há anos e sempre tive excelentes resultados. A qualidade das próteses e o atendimento são impecáveis."
+                    </p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Outros depoimentos aqui -->
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://placehold.co/100x100" alt="Carlos Eduardo - Paciente satisfeito com sua nova prótese">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Eduardo</h4>
+                            <p>Paciente</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Minha prótese ficou perfeita, ninguém percebe que não são meus dentes naturais. Agora posso sorrir com confiança novamente!"
+                    </p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Adicione as outras seções aqui (About, CTA, Contact, Footer) -->
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-tooth text-3xl text-blue-400"></i>
-                        <span class="text-2xl font-bold">Odonto<span class="text-blue-200">Care</span></span>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://placehold.co/180x80" alt="Prótesis Dental Lab Logo - Tooth icon with white typography">
                     </div>
-                    <p class="text-gray-400">Cuidando do seu sorriso com tecnologia, carinho e profissionalismo.</p>
+                    <p>O Prótesis Dental Lab é especializado na fabricação de próteses dentárias de alta qualidade, combinando tecnologia de ponta com artesanato experiente para proporcionar sorrisos naturais e funcionais.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#inicio" class="text-gray-400 hover:text-blue-400 transition">Início</a></li>
-                        <li><a href="#servicos" class="text-gray-400 hover:text-blue-400 transition">Serviços</a></li>
-                        <li><a href="#equipe" class="text-gray-400 hover:text-blue-400 transition">Profissionais</a></li>
-                        <li><a href="#contato" class="text-gray-400 hover:text-blue-400 transition">Contato</a></li>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#technology">Tecnologia</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Clareamento Dental</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Ortodontia</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Implantes Dentários</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Odontopediatria</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition text-xl"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition text-xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition text-xl"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition text-xl"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    
-                    <div>
-                        <h4 class="text-lg font-bold mb-2">Assine nossa Newsletter</h4>
-                        <form class="flex">
-                            <input type="email" placeholder="Seu email" class="px-4 py-2 rounded-l-lg outline-none text-gray-800 w-full">
-                            <button type="submit" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@protesislab.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Próteses, 123 - Vila Dental, SP</p>
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 OdontoCare. Todos os direitos reservados.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Prótesis Dental Lab. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script>
+        // Aqui você pode adicionar qualquer interatividade necessária
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
