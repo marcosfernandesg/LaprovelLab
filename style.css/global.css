@@ -945,3 +945,13 @@ button[type="submit"]:disabled {
         color: #374151;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

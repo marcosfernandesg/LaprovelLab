@@ -52,3 +52,18 @@ _Mensagem enviada através do site_`;
                 botao.disabled = false;
             }, 2000);
         }
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+    const headerHeight = document.querySelector('header').offsetHeight; // altura do menu fixo
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
